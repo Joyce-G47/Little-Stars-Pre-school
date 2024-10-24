@@ -16,7 +16,7 @@ body {
 }
 
 header {
-    background: #ff8c00;
+    background: #11a91b;
     color: white;
     padding: 20px 0;
 }
@@ -48,11 +48,17 @@ nav ul li a {
 }
 
 .btn {
-    background: #ff4500;
+    background: #11a91b;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+}
+.image-container img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
 }
 
 .about, .programs, .gallery, .contact {
@@ -92,7 +98,7 @@ nav ul li a {
 }
 
 .contact button {
-    background: #ff8c00;
+    background: #11a91b;
     color: white;
     padding: 10px;
     border: none;
