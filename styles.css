@@ -1,3 +1,4 @@
+/* General Reset */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -15,24 +16,41 @@ body {
     margin: 0 auto;
 }
 
-header {
-    background: #11a91b;
-    color: white;
-    padding: 20px 0;
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header h1 {
-    text-align: center;
+/* Header Styles */
+header {
+    background: #11a91b; /* Green background for the main theme */
+    color: white;
+    padding: 20px 0;
+    display: flex; /* Flexbox layout for header */
+    justify-content: space-between; /* Space between logo and menu */
+    align-items: right; /* Center vertically */
 }
+
+
+/* Logo Styling */
+.logo img {
+    width: 300px;
+    height: 300px;/* Set the logo height */
+    margin: 5px;
+}
+
 
 nav ul {
     display: flex;
-    justify-content: center;
     list-style: none;
+    margin-left: 400px;
+    margin-top: 20px;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 15px; /* Spacing between each menu item */
 }
 
 nav ul li a {
@@ -40,6 +58,7 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Hero Section */
 .hero {
     background: url('hero-image.jpg') no-repeat center center/cover;
     color: white;
@@ -54,13 +73,17 @@ nav ul li a {
     text-decoration: none;
     border-radius: 5px;
 }
+
 .image-container img {
     width: 500px;
     height: auto;
     border-radius: 10px;
     margin-top: 10px;
+    margin-left: 100px;
+    display: flex;
 }
 
+/* Other Sections */
 .about, .programs, .gallery, .contact {
     padding: 50px 0;
     text-align: center;
@@ -83,6 +106,7 @@ nav ul li a {
     border-radius: 10px;
 }
 
+/* Contact Form */
 .contact form {
     display: flex;
     flex-direction: column;
@@ -106,6 +130,7 @@ nav ul li a {
     cursor: pointer;
 }
 
+/* Footer */
 footer {
     background: #333;
     color: white;

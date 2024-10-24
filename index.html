@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preschool Website</title>
+    <title>Little Stars Preschool</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,28 +11,29 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Little Stars Pre-school</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#programs">Programs</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <a href="#" class="logo" aria-label="Little Stars Preschool logo"><i class="fas fa-star"></i> Little Stars</a>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-
+    
     <section id="home" class="hero">
-        <div class="container">
-            <h2>Welcome to Little Stars Preschool!</h2>
-            <p>Your child's journey of learning and discovery begins here.</p>
-            <a href="#contact" class="btn">Enroll Now</a>
-        </div>
-        <div class="image-container">
-            <img src="team.jpg" alt="">
+        <div class="hero-content">
+            <div class="logo">
+                <img src="2-removebg-preview.png" alt="Little Stars Preschool Logo">
+                <h2>Welcome to Little Stars Preschool!</h2>
+                <p>Your child's journey of learning and discovery begins here.</p>
+                <a href="#contact" class="btn">Enroll Now</a>
+            </div>
+            <div class="image-container">
+                <img src="team.jpg" alt="Our Team">
+            </div>
         </div>
     </section>
 
@@ -48,7 +49,7 @@
             <h2>Our Programs</h2>
             <ul>
                 <li>Early Learning Program</li>
-                <li>Art & Crafts</li>
+                <li>Arts & Crafts</li>
                 <li>Music & Movement</li>
                 <li>Outdoor Activities</li>
             </ul>
@@ -71,9 +72,9 @@
         <div class="container">
             <h2>Contact Us</h2>
             <form action="https://formspree.io/f/your-form-id" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
+                <input type="text" name="name" placeholder="Your Name" required aria-label="Your Name">
+                <input type="email" name="email" placeholder="Your Email" required aria-label="Your Email">
+                <textarea name="message" placeholder="Your Message" required aria-label="Your Message"></textarea>
                 <button type="submit">Send Message</button>
             </form>
         </div>
